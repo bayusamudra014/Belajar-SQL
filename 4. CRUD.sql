@@ -23,6 +23,10 @@ INSERT INTO products(id, name, description, price, quantity)
         ('P003', 'Nasi Goreng', 'Nasi goreng enak', 25000, 100),
         ('P004', 'Es Jom', 'Minuman berasa mangga + susu', 5000, 100);
 
+INSERT INTO products(id, name, description, price, quantity)
+    VALUES
+        ('P003', 'Nasi Goreng', 'Nasi goreng enak', 25000, 100);
+
 # 2. SELECT data (Basic)
 SELECT * FROM products;
 

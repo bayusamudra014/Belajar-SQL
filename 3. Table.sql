@@ -17,11 +17,12 @@ SHOW TABLES;
 
 CREATE TABLE pengguna
 (
-    id INT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT, # Auto Increment cuma bisa di PK
     name VARCHAR(100),
     username VARCHAR(100) UNIQUE,
     password VARCHAR(100),
-    verified BOOLEAN
+    verified BOOLEAN,
+    PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
 # 3. Lihat struktur tabel
@@ -59,3 +60,6 @@ TRUNCATE pengguna;
 
 # 6. Hapus Tabel
 DROP TABLE pengguna;
+
+# 6. Mendapatkan id terakir auto increment sebelumnya
+SELECT LAST_INSERT_ID();
