@@ -57,3 +57,6 @@ UPDATE products
 # 4. Delete Data
 # Klo gaada gaakan error
 DELETE FROM products WHERE id = 'P005';
+
+# Keunikan Keunikan
+SELECT l1.name, l2.name from products as l1, products as l2;

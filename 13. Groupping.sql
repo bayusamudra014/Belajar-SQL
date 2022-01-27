@@ -13,3 +13,8 @@ SELECT quantity, COUNT(id) as total
 FROM products
 GROUP BY quantity
 HAVING total > 1;
+
+-- FILTERING, btw bisa diaggregate juga
+SELECT quantity, COUNT(distinct id) FROM products
+GROUP BY quantity
+HAVING AVG(price) >= (SELECT AVG(price) FROM products);
